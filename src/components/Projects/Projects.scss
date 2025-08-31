@@ -1,0 +1,19 @@
+.projects__title {
+    color: var(--txt-color);
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.filtre {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.filtre select {
+    border-radius: 5px;
+    padding: 5px;
+    background-color:white; 
+}

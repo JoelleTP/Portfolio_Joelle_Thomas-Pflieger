@@ -1,0 +1,36 @@
+:root {
+    --num: 9;  /* num of divs/images */
+    --wd: 100; /* width of card div */
+    --main-color: #f7ca8f;
+    --txt-color: #D19863;
+}
+
+* {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 50px 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+} 

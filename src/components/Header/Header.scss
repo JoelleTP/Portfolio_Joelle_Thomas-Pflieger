@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+h1 {
+    padding: 30px;
+    font-family: "Berkshire Swash", serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    }
+} 
