@@ -12,7 +12,7 @@
 
 .timeline {
   width: 100%;
-  margin: 20px auto;
+  margin: 0 auto;
   position: relative;
   max-width: 1440px;
 }
@@ -26,6 +26,9 @@
   height: 100%;
   background: rgba(255,255,255,0.2);
   transform: translateX(-50%);
+  @media (max-width: 768px) {
+      left: 20px;
+  }
 }
 
 .timeline article {
@@ -34,12 +37,20 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .inner {
   width: 40%;
   padding: 0;
   border-radius: 6px;
+  @media (max-width: 768px) {
+     width: 80%;
+    margin: 0 20px 0 60px;
+  }
 }
 
 .timeline article:nth-child(2n+1) .inner {
@@ -53,6 +64,10 @@
 .timeline article:nth-child(2n+2) .inner {
   margin-left: auto;
   background-color: #e67e22;
+  @media (max-width: 768px) {
+     margin: 0 20px 0 60px;
+    background-color: #e67e22;
+  }
 }
 .timeline article:nth-child(2n+2) h3::after {
   left: -5px;
@@ -64,8 +79,8 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   font-weight: bold;
   padding: 5px;
@@ -77,6 +92,11 @@
   display: flex;
   align-items:center;
   justify-content: center;
+  @media (max-width: 768px) {
+    left: 0;
+    transform: translateX(0);
+    margin-left: 0;
+  }
 }
 
 h3 {
@@ -95,6 +115,10 @@ h3::after {
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
+  @media (max-width: 768px) {
+    left: -5px;
+    right: auto;
+  }
 }
 
 .inner p {
@@ -104,36 +128,4 @@ h3::after {
   background: #fff;
   color: #444;
   border-radius: 0 0 6px 6px;
-}
-
-@media screen and (max-width: 768px) {
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline article {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .timeline article:nth-child(2n+2) .inner {
-    margin: 0 20px 0 60px;
-    background-color: #e67e22;
-}
-
-  .timeline article .inner {
-    width: 80%;
-    margin: 0 20px 0 60px;
-  }
-
-  .timeline article h3::after {
-    left: -5px;
-    right: auto;
-  }
-
-  .date {
-    left: 0;
-    transform: translateX(0);
-    margin-left: 0;
-  }
 }

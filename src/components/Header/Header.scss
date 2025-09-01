@@ -53,21 +53,17 @@ header {
 }
 
 .navbar__burger {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: transparent;
     border: none;
-    color: inherit;
     display: none;
     &:hover {
         cursor: pointer;
     }
     @media (max-width: 768px) {
         display: block;
-        position: fixed;
         z-index: 10;
-        top: 1rem;
-        right: 1rem;
     }
 }
 
@@ -76,7 +72,7 @@ header {
 .burger__bar::after {
     @media (max-width: 768px){
         display: block;
-        width: 40px;
+        width: 30px;
         height: 3px;
         position: relative;
         border-radius: 3px;
