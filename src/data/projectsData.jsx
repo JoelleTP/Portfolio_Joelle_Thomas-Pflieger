@@ -1,7 +1,7 @@
 export const projectsData = [
     {
         "title": "ArgentBank - Application bancaire",
-        "image": "../../public/assets/Image/ArgentBank.png",
+        "image": "/assets/Image/ArgentBank.png",
         "description": "Argent Bank est une nouvelle banque en ligne qui veut mettre en place un nouveau système d'authentification des utilisateurs grâce à une application web React et à l'implémentation de Redux pour le state management. Création de l'application web complète et responsive avec React",
         "tags": [
 			"React",
@@ -15,7 +15,7 @@ export const projectsData = [
     },
     {
         "title": "Kasa",
-        "image": "../../public/assets/Image/Kasa.png",
+        "image": "/assets/Image/Kasa.png",
         "description": "Création d'une application web de location immobilière avec React et React Router en suivant les maquettes Figma",
         "tags": [
 			"React",
@@ -27,7 +27,7 @@ export const projectsData = [
     },
     {
         "title": "Digi-Plume",
-        "image": "../../public/assets/Image/Digi-plume.png",
+        "image": "/assets/Image/Digi-plume.png",
         "description": "Création d'un site interne responsive avec un formulaire de contact pour un auto-entrepreneur écrivain public",
         "tags": [
 			"HTML",
@@ -40,7 +40,7 @@ export const projectsData = [
     },
     {
         "title": "Portfolio Sophie-Bluel",
-        "image": "../../public/assets/Image/sophie-bluel.png",
+        "image": "/assets/Image/sophie-bluel.png",
         "description": "Création du site portfolio d'une architecte d'intérieur : page de présentation des travaux, page de connexion de l'administrateur du site, modale permettant d'ajouter ou de supprimer de nouveaux travaux",
         "tags": [
 			"JavaScript",
@@ -52,7 +52,7 @@ export const projectsData = [
     },
     {
         "title": "Ohmyfood",
-        "image": "../../public/assets/Image/ohmyfood.png",
+        "image": "/assets/Image/ohmyfood.png",
         "description": "Création d'un site “mobile first” qui répertorie 4 menus de restaurants gastronomiques disponible à partir d'une page d'accueil. Mise en place des animations du site",
         "tags": [
 			"HTML",
@@ -63,7 +63,7 @@ export const projectsData = [
     },
     {
         "title": "724events",
-        "image": "../../public/assets/Image/724events.png",
+        "image": "/assets/Image/724events.png",
         "description": "Débuggage et finalisation du site d'une agence événementiel, rédaction d'un cahier de recette et réaliation de tests unitaires et fonctionnels",
         "tags": [
 			"React",
@@ -76,7 +76,7 @@ export const projectsData = [
     },
     {
         "title": "Qwenta",
-        "image": "../../public/assets/Image/Qwenta_notion.png",
+        "image": "/assets/Image/Qwenta_notion.png",
         "description": "Planification du développement du site Menu Maker de Qwenta, site permettant aux restaurateurs d'afficher et de mettre en page leurs menus facilement, en quelques clics. Mise en place des spécifications techniques, de la veille technologique et du tableau Kanban",
         "tags": [
 			"Notion",
@@ -86,7 +86,7 @@ export const projectsData = [
     },
     {
         "title": "Booki",
-        "image": "../../public/assets/Image/Booki.png",
+        "image": "/assets/Image/Booki.png",
         "description": "Création de la page d'accueil d'une agence de voyage avec HTML et CSS",
         "tags": [
 			"HTML",
@@ -98,7 +98,7 @@ export const projectsData = [
     },
     {
         "title": "Nina Carducci",
-        "image": "../../public/assets/Image/NinaCarducci.png",
+        "image": "/assets/Image/NinaCarducci.png",
         "description": "Ce projet concerne le portfolio en ligne de Nina Carducci, une photographe basée à Bordeaux. Le site initial a été amélioré pour assurer une meilleure accessibilité, des performances optimisées et un bon référencement SEO.",
         "tags": [
 			"SEO",

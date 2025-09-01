@@ -1,5 +1,4 @@
 import "./About.scss"
-import Photo from "../../../public/assets/Image/Photo_JTP.png"
 
 function About() {
     return (
@@ -15,7 +14,7 @@ function About() {
                         </div>
                     </div>
                     <div className="about__photo">
-                        <img className="about__img" src={ Photo } alt="photo de Joëlle Thomas-Pflieger" />
+                        <img className="about__img" src="/assets/Image/Photo_JTP.png" alt="photo de Joëlle Thomas-Pflieger" />
                     </div>
                 </div>
             </div>    
