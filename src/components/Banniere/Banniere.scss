@@ -12,7 +12,7 @@
     position: absolute;
     top: 15%;
     left: 27%;
-    width: 30%;
+    width: 35%;
     font-family: "Fira Code", monospace;
     box-sizing: border-box;
 }
@@ -20,11 +20,17 @@
 .banniere__txt p {
     font-size: 32px;
     color: #4EC9B0;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .banniere__txt span {
     font-size: 32px;
     color: #CE9178;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .banniere__txt strong {
@@ -32,4 +38,7 @@
     color: #DCDCAA;
     display: block;
     margin-top: 20px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }

@@ -1,5 +1,7 @@
 import "./Projects.scss"
 import { projectsData } from "../../data/projectsData"
+import Card from "../Card/Card"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 function Projects() {
     const allTags = [...new Set(projectsData.flatMap(project => project.tags))];
@@ -16,7 +18,23 @@ function Projects() {
                     ))}   
                 </select>
             </form>
-            
+            <ResponsiveMasonry
+                columnsCountBreakPoints={{350:1, 750:2, 1024:3}}
+            >
+                <Masonry
+                    gutter="40px"
+                    className="masonry__grid"
+                    columnClassName="masonry__column"
+                >
+                    {projectsData.map((project) => (
+                        <Card 
+                        key={project.title}
+                        title={project.title}
+                        image={project.image} 
+                        />
+                    ))}
+                </Masonry>
+            </ResponsiveMasonry>
         </section>
     )
 }

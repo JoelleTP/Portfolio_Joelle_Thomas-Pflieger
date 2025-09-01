@@ -14,10 +14,7 @@
 
 ul {
     list-style: none;
-    display: flex;
-    gap: 15px;
     padding: 0;
-    align-items: center;
 }
 
 a {
@@ -27,6 +24,7 @@ a {
 
 section {
     padding: 50px 100px;
+    background-color: rgb(217, 217, 217);
 }
 
 @media only screen and (max-width: 768px) {
