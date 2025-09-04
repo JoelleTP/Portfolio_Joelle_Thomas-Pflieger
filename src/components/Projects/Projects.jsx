@@ -20,6 +20,7 @@ function Projects() {
             </form>
             <ResponsiveMasonry
                 columnsCountBreakPoints={{350:1, 750:2, 1024:3}}
+                gutterBreakPoints={{0 : "30px"}}
             >
                 <Masonry
                     gutter="40px"
@@ -30,7 +31,11 @@ function Projects() {
                         <Card 
                         key={project.title}
                         title={project.title}
-                        image={project.image} 
+                        image={project.image}
+                        description={project.description}
+                        tags={project.tags}
+                        github={project.github}
+                        website={project.website} 
                         />
                     ))}
                 </Masonry>

@@ -25,10 +25,13 @@ a {
 section {
     padding: 50px 100px;
     background-color: rgb(217, 217, 217);
-}
-
-@media only screen and (max-width: 768px) {
-    section {
+    @media (max-width: 768px) {
         padding: 50px 20px;
     }
-} 
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

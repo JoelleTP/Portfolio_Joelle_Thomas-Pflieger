@@ -55,12 +55,7 @@ header {
 .navbar__burger {
     width: 30px;
     height: 30px;
-    background: transparent;
-    border: none;
     display: none;
-    &:hover {
-        cursor: pointer;
-    }
     @media (max-width: 768px) {
         display: block;
         z-index: 10;
