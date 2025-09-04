@@ -1,3 +1,9 @@
+@function fz($min, $max: $min, $viewport-min: 360, $viewport-max: 1920) { 
+    $a: calc(($max - $min) / ($viewport-max/16 - $viewport-min/16)); 
+    $b: calc(-1 * ($viewport-min/16) * $a + $min); 
+    @return clamp(#{$min}rem, #{$b}rem + #{$a * 100}vw, #{$max}rem); 
+}
+
 .banniere {
     position: relative;
     padding: 0;
@@ -17,28 +23,40 @@
     box-sizing: border-box;
 }
 
-.banniere__txt p {
-    font-size: 32px;
+.txt__additional {
+    font-size: fz(1, 4.8, 768, 1920); ;
     color: #4EC9B0;
     @media (max-width: 768px) {
-        font-size: 16px;
+        display: none;
+    }
+    &--color {
+        color: #CE9178;
     }
 }
 
-.banniere__txt span {
-    font-size: 32px;
-    color: #CE9178;
-    @media (max-width: 768px) {
-        font-size: 16px;
-    }
-}
-
-.banniere__txt strong {
-    font-size: 40px;
+.txt__main {
+    font-size: fz(2, 5.7, 768, 1920); 
     color: #DCDCAA;
     display: block;
     margin-top: 20px;
     @media (max-width: 768px) {
-        font-size: 20px;
+        font-size: fz(1, 3, 350, 768);
+        margin-top: 0;
     }
+    & span {
+        font-size: inherit;
+    }
+    & span:nth-child(1) {
+        @media (max-width: 768px) {
+            color: #4EC9B0;
+        }
+    }
+    & span:nth-child(2) {
+        @media (max-width: 768px) {
+            color: #CE9178;
+        }
+    }
+    & span:nth-child(3) {
+        white-space: nowrap;
+    } 
 }

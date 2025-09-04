@@ -5,7 +5,13 @@ function Banniere() {
         <section className="banniere">
             <img className="banniere__img" src="/assets/Image/banniere.png" alt="ordinateur sur un bureau" />
             <div className="banniere__txt">
-                <p><span>Bienvenue,</span><br />Je suis<br /><strong>Développeur Web Front-end</strong></p>
+                <p className="txt__additional">Bienvenue,</p>
+                <p className="txt__additional txt__additional--color">Je suis</p>
+                <p className="txt__main">
+                    <span>Développeur </span> 
+                    <span>Web </span> 
+                    <span>Front-end</span>
+                </p>
             </div>
         </section>
     )
