@@ -2,9 +2,24 @@ import Github from "../../../public/assets/Icone/Github_small.png"
 import Linkedin from "../../../public/assets/Icone/Linkedin.png"
 import Facebook from "../../../public/assets/Icone/Facebook.png"
 import "./Contact.scss"
+import { useRef } from "react"
+import emailjs from "@emailjs/browser"
 
 
 function Contact() {
+    const form = useRef()
+    const sendEmail = (e) => {
+        e.preventDefault()
+        emailjs.sendForm("service_hgemkxu", "template_r2t6ncj", form.current, "MTYuB7VkDmfCgi_b_").then(
+            () => {
+                alert("Message envoyé")
+                form.current.reset();
+            },
+            (error) => {
+                alert("Erreur lors de l'envoi, merci de réessayer", error)
+            }
+        )
+    }
     return (
         <section id="contact" className="contact">
             <div className="contact__container">
@@ -12,22 +27,22 @@ function Contact() {
                     <h2 className="contact__title">Contact</h2>
                     <div className="contact__icon">
                         <p>Liens :</p>
-                        <a href=""><img src= { Github } alt="Logo Github" /></a>
-                        <a href=""><img src= { Linkedin } alt="Logo Linkedin" /></a>
+                        <a href="https://github.com/JoelleTP" target="_blank"><img src= { Github } alt="Logo Github" /></a>
+                        <a href="https://www.linkedin.com/in/joëlle-pflieger-4b2642194" target="_blank"><img src= { Linkedin } alt="Logo Linkedin" /></a>
                         <a href=""><img src= { Facebook } alt="Logo Facebook" /></a>
                     </div>
                     <p>Directement par email : <br /> joelle.pflieger@free.fr</p>
                     <p>ou via le formulaire de contact</p>
                 </div>
-                <form className="contact__form">
+                <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <label htmlFor="name">Nom</label>
-                    <input type="text" id="name" />
-                    <label htmlFor="lastname">Prénom</label>
-                    <input type="text" id="lastname" />
+                    <input type="text" name="name" id="name" required />
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" />
+                    <input type="email" name="email" id="email" required />
+                    <label htmlFor="subject">Objet</label>
+                    <input type="subject" name="object" id="subject" required />
                     <label htmlFor="message">Message</label>
-                    <input type="textarea" id="message" />
+                    <input type="textarea" name="message" id="message" required />
                     <button type="submit">Soumettre</button>
                 </form>
             </div>

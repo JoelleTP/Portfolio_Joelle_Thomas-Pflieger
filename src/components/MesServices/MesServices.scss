@@ -1,0 +1,41 @@
+.services {
+    background-color: var(--main-color);
+}
+
+.services__title{
+    color: white;
+    text-align: center;
+    padding: 0 0 70px 0;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.services__container {
+    max-width: 1440px;
+    display: flex;
+    margin: auto;
+    gap: 30px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.services__article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.article__title {
+    font-size: 20px;
+}
+
+.article__image {
+    width: 120px;
+    border-radius: 50%;
+}

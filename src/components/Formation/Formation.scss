@@ -98,7 +98,7 @@
   }
 }
 
-h3 {
+.timeline h3 {
   padding: 15px;
   margin: 0;
   color: #fff;
@@ -107,7 +107,7 @@ h3 {
   position: relative;
 }
 
-h3::after {
+.timeline h3::after {
   content: '';
   position: absolute;
   top: 20px;
