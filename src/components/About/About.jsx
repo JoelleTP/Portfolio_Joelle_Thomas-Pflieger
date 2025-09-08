@@ -9,8 +9,8 @@ function About() {
                     <div className="about__txt">
                         <p>En reconversion en développement web depuis 2 ans, je me suis découvert tardivement une passion pour le code. J'ai douze ans d'expérience en entreprise où j'ai pu faire de la gestion de projets et travailler en équipe. </p>
                         <div className="about__button">
-                            <button><a href="/assets/Fichiers/CV.pdf" target="_blank">Voir le CV</a></button>
-                            <button><a href="/assets/Fichiers/CV.pdf" download>Télécharger le CV</a></button>
+                            <a href="/assets/Fichiers/CV.pdf" target="_blank">Voir le CV</a>
+                            <a href="/assets/Fichiers/CV.pdf" download>Télécharger le CV</a>
                         </div>
                     </div>
                     <div className="about__photo">

@@ -1,14 +1,13 @@
+@import "../../assets/styles/partials/variables.scss";
+@import "../../assets/styles/partials/mixin.scss";
+
 .services {
-    background-color: var(--main-color);
+    background-color: $colored_background;
 }
 
 .services__title{
-    color: white;
     text-align: center;
-    padding: 0 0 70px 0;
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    font-weight: 700;
+    @include main_title;
 }
 
 .services__container {

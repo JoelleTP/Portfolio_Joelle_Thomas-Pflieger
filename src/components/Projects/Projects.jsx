@@ -18,9 +18,9 @@ function Projects() {
         
     }
     const getColumnsNumber = (count) => {
-        if (count === 1) return 1;          // un seul projet → 1 colonne
-        if (count % 2 === 0) return 2;      // pair → 2 colonnes
-        return 3;                           // impair (>1) → 3 colonnes
+        if (count === 1) return 1;       
+        if (count % 2 === 0) return 2;      
+        return 3;                        
     };
 
 
@@ -28,9 +28,9 @@ function Projects() {
         <section id="projects" className="projects">
             <h2 className="projects__title">Projets</h2>
             <form className="filtre">
-                <label htmlFor="filtre-select"></label>
+                <label htmlFor="filtre-select">Filtrer les projets :</label>
                 <select name="filtre" id="filtre-select" onChange={handleChange}>
-                    <option value="">Filtrer les projets par catégorie</option>
+                    <option value="">Tous</option>
                     {allTags.map((tag, index) => (
                         <option key={index} value={tag}>{tag}</option>
                     ))}   
@@ -38,9 +38,9 @@ function Projects() {
             </form>
             <ResponsiveMasonry
                 columnsCountBreakPoints={{
-                    350: 1,      // sur petit écran, toujours 1 colonne
-                    750: Math.min(getColumnsNumber(data.length), 2), // max 2 colonnes en medium
-                    1024: getColumnsNumber(data.length),             // règle personnalisée en grand
+                    350: 1,
+                    750: Math.min(getColumnsNumber(data.length), 2), 
+                    1024: getColumnsNumber(data.length),
                 }}
                 gutterBreakPoints={{0 : "30px"}}
             >

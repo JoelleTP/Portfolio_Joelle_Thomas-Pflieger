@@ -17,7 +17,7 @@ function MesServices() {
                 </article>
                 <article className="services__article">
                     <img className="article__image" src="/assets/Image/Debogage.jpg" alt="symbole de réparation" />
-                    <h3 className="article__title">Débuggage de site web</h3>
+                    <h3 className="article__title">Débogage de site web</h3>
                     <p className="article__description">Revue / reprise d'un site web existant pour réparer les bugs</p>
                 </article>
             </div>

@@ -4,6 +4,8 @@
     @return clamp(#{$min}rem, #{$b}rem + #{$a * 100}vw, #{$max}rem); 
 }
 
+@import "../../assets/styles/partials/variables.scss";
+
 .banniere {
     position: relative;
     padding: 0;
@@ -19,8 +21,7 @@
     top: 15%;
     left: 27%;
     width: 35%;
-    font-family: "Fira Code", monospace;
-    box-sizing: border-box;
+    font-family: $computer_font;
 }
 
 .txt__additional {
@@ -45,6 +46,7 @@
     }
     & span {
         font-size: inherit;
+        color: #DCDCAA;
     }
     & span:nth-child(1) {
         @media (max-width: 768px) {

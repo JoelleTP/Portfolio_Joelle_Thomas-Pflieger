@@ -1,5 +1,7 @@
+@import "../../assets/styles/partials/variables.scss";
+
 footer {
     text-align: center;
     padding: 30px;
-    background-color: rgb(217, 217, 217);
+    background-color: $neutral_background;
 }

@@ -27,11 +27,11 @@ function Card ({ title, image, description, tags, github, website }) {
         <div className="card">
             <img src={image} alt={title} className="card__image" />
             <div className="card__front">
-                <h4 className="card__title">{title}</h4>
-                <button className="card__button" onClick={openModal}>
-                    <div className="dot"></div>
-                    <div className="dot"></div>
-                    <div className="dot"></div>
+                <h3 className="card__title">{title}</h3>
+                <button className="card__button" onClick={openModal} aria-label="détails du projet">
+                    <span className="dot"></span>
+                    <span className="dot"></span>
+                    <span className="dot"></span>
                 </button>
                 <Modal 
                     isOpen={modalIsOpen}
@@ -41,17 +41,17 @@ function Card ({ title, image, description, tags, github, website }) {
                 >
                     <div className="modal__container">
                         <div className="modal__topContainer">
-                            <h4 className="modal__title">{title}</h4>
+                            <h3 className="modal__title">{title}</h3>
                             <button className="modal__close" onClick={closeModal}><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <img src={image} className="modal__image" alt={title} />
                         <div className="modal__description">
-                            <h5 className="modal__subtitle">Description :</h5>
+                            <h4 className="modal__subtitle">Description :</h4>
                             <p>{description}</p>
                         </div>
                         <div className="modal__txt">
                         <div className="modal__skills">
-                            <h5 className="modal__subtitle">Compétences utilisées :</h5>
+                            <h4 className="modal__subtitle">Compétences utilisées :</h4>
                             <ul className="modal__tags">
                                 {tags.map((tag, index) => (
                                     <li className="tag" key={index}>{tag}</li>

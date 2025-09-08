@@ -1,0 +1,33 @@
+@import "partials/variables.scss";
+
+* {
+    margin: 0;
+    font-family: $main_font;
+    font-size: $maintxt_size;
+    box-sizing: border-box;
+    color: $main_txt;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $main_txt;
+}
+
+section {
+    padding: 70px;
+    background-color: $neutral_background;
+    @media (max-width: 768px) {
+        padding: 50px 20px;
+    }
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+@mixin main_title {
+    font-family: $title_font;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 70px;
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+@mixin main_button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: solid 2px $colored_title;
+    background: white;
+    color: $colored_title;
+    font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 16px;    
+    }
+}

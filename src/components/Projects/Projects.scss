@@ -1,28 +1,34 @@
+@import "../../assets/styles/partials/variables.scss";
+@import "../../assets/styles/partials/mixin.scss";
+
 .projects__title {
-    color: var(--txt-color);
+    color: $colored_title;
     text-align: center;
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    font-weight: 700;
+    @include main_title;
 }
 
 .filtre {
     display: flex;
-    margin: 30px;
-    justify-content: center;
-}
-
-.filtre select {
-    border-radius: 5px;
-    padding: 5px;
-    background-color:white; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    & label {
+        color: $colored_title;
+    }
+    & select {
+        @include main_button;
+        outline: none;
+        & option {
+        color: $colored_title;
+        font-size: 16px;
+        }
+    }
 }
 
 .masonry__grid {
-    margin: 70px auto;
+    margin: 70px auto 0 auto;
     max-width: 1440px;
-}
-
-.masonry__grid--single {
-  justify-content: center; // centre le seul projet
+    &--single {
+        justify-content: center;
+    }
 }

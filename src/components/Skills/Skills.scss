@@ -1,31 +1,34 @@
+@import "../../assets/styles/partials/variables.scss";
+@import "../../assets/styles/partials/mixin.scss";
+
 .skills {
-    background-color: var(--main-color);
+    background-color: $colored_background;
 }
 
 .skills__title {
     text-align: center;
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    font-weight: 700;
+    @include main_title;
 }
 
 .skills__carousel {
     overflow: hidden;
     max-width: 1440px;
-    height: 500px;
+    height: 400px;
     margin: auto;
     @media (max-width: 768px) {
-    height: 350px;
+    height: 260px;
     }
 }
 
 .carousel__gallery {
     display: flex;
-    align-items: center;
+    padding-top: 100px;
     width: 100%;
     height: 100%;
     position: relative;
+    @media (max-width: 768px) {
+        padding-top: 55px;
+    }
 }
 
 .gallery__card {
@@ -41,10 +44,10 @@
     border: solid 1px black;
     animation: slide 9s linear infinite,
         scaleEffect 9s ease-in-out infinite;
-    animation-delay: calc(9s * ((var(--timer) - 1) / var(--num) - 1));
+    animation-delay: calc(9s * ((var(--timer) - 1) / $num - 1));
     @media (max-width: 768px) {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -83,21 +86,21 @@
     }
 
     to {
-        left: calc(-1 * var(--wd)* 1px);
+        left: -100px;
     }
 }
 
  @keyframes scaleEffect {
     0%,
-    25%,
-    75%,
+    30%,
+    70%,
     100% {
         transform: rotate(45deg) scale(1);
         z-index: 0;
         filter: grayscale(1);
     }
 
-    50% {
+    48% {
         transform: rotate(45deg) scale(2);
         z-index: 10;
         filter: grayscale(0);

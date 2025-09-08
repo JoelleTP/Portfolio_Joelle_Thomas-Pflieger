@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Router from "./components/Router/Router"
-import "./main.scss"
+import "./assets/styles/main.scss"
 
 
 createRoot(document.getElementById('root')).render(

@@ -29,21 +29,20 @@ function Contact() {
                         <p>Liens :</p>
                         <a href="https://github.com/JoelleTP" target="_blank"><img src= { Github } alt="Logo Github" /></a>
                         <a href="https://www.linkedin.com/in/joëlle-pflieger-4b2642194" target="_blank"><img src= { Linkedin } alt="Logo Linkedin" /></a>
-                        <a href=""><img src= { Facebook } alt="Logo Facebook" /></a>
                     </div>
-                    <p>Directement par email : <br /> joelle.pflieger@free.fr</p>
-                    <p>ou via le formulaire de contact</p>
+                    <p className="contact__txt">Directement par email : <br /> joelle.pflieger@free.fr</p>
+                    <p className="contact__txt">ou via le formulaire de contact</p>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <label htmlFor="name">Nom</label>
-                    <input type="text" name="name" id="name" required />
+                    <input className="form__name" type="text" name="name" id="name" required />
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" required />
+                    <input className="form__email"type="email" name="email" id="email" required />
                     <label htmlFor="subject">Objet</label>
-                    <input type="subject" name="object" id="subject" required />
+                    <input className="form__object" type="text" name="subject" id="subject" required />
                     <label htmlFor="message">Message</label>
-                    <input type="textarea" name="message" id="message" required />
-                    <button type="submit">Soumettre</button>
+                    <textarea className="form__message" name="message" id="message" required />
+                    <button className="form__button" type="submit">Soumettre</button>
                 </form>
             </div>
         </section>
