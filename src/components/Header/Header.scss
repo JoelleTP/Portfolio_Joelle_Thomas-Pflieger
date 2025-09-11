@@ -1,4 +1,5 @@
 @import "../../assets/styles/partials/variables.scss";
+@import "../../assets/styles/partials/mixin.scss";
 
 header {
     display: flex;
@@ -6,12 +7,16 @@ header {
     justify-content: space-between;
     background-color: $neutral_background;
     padding: 30px;
+    gap: 20px;
 }
 
 .navbar {
     display: flex;
     gap: 15px;
     align-items: center;
+    @media (max-width: 1024px) {
+        flex-direction: row-reverse;
+    }
 }
 
 .mainlogo {
@@ -19,7 +24,7 @@ header {
     font-size: 2.25rem;
     font-weight: 500;
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -120,5 +125,16 @@ header {
 
 .navbar__item:last-child::after {
     display: none;
+}
+
+.button__translate {
+    @include main_button;
+    padding: 0 5px;
+    appearance: none;
+    outline: none;
+        & option {
+        color: $colored_title;
+        background-color: white;
+        }
 }
 

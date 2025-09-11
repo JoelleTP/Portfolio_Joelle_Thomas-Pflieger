@@ -1,10 +1,12 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import "./Card.scss"
 import CardModal from "../Modal/CardModal";
+import { LanguageContext } from "../../context/index.jsx";
 
 function Card ({ title, image, description, tags, github, website }) {
     
     const[modalIsOpen, setIsOpen] = useState(false)
+    const { lang } = useContext(LanguageContext)
 
     return (
         
@@ -12,7 +14,7 @@ function Card ({ title, image, description, tags, github, website }) {
             {image && <img src={image} alt={title} className="card__image" />}
             <div className="card__front">
                 {title && <h3 className="card__title">{title}</h3>}
-                <button className="card__button" onClick={() => setIsOpen(true)} aria-label={`Voir les détails du projet ${title}`}>
+                <button className="card__button" onClick={() => setIsOpen(true)} aria-label={lang==="fr" ? `Voir les détails du projet ${title}` : `See details of the project ${title}` }>
                     <span className="dot"></span>
                     <span className="dot"></span>
                     <span className="dot"></span>

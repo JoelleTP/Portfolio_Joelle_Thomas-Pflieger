@@ -1,10 +1,13 @@
 import "./Skills.scss"
 import { skillsData } from "../../data/data";
+import { LanguageContext } from "../../context";
+import { useContext } from "react";
 
 function Skills() {
+    const { lang } = useContext(LanguageContext);
     return (
         <section id="skills" className="skills">
-            <h2 className="skills__title">Compétences</h2>
+            <h2 className="skills__title">{lang==="fr" ? "Compétences" : "Skills"}</h2>
             <div className="skills__carousel">
                 <ul className="carousel__gallery">
                     {skillsData.map((skill, index) => (
