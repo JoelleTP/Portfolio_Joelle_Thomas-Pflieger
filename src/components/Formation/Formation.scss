@@ -106,7 +106,7 @@
   padding: 15px;
   margin: 0;
   color: #fff;
-  font-size: 25px;
+  font-size: $subtitle_size;
   font-weight: 500;
   position: relative;
   @media (max-width: 768px) {
@@ -130,7 +130,6 @@
 .inner p {
   padding: 15px;
   margin: 0;
-  font-size: 16px;
   background: #fff;
   color: #444;
   border-radius: 0 0 6px 6px;

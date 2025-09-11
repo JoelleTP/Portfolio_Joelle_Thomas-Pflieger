@@ -1,0 +1,34 @@
+@import "../../assets/styles/partials/variables.scss";
+
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex: 1;
+}
+            
+.errorPage__title {
+    font-weight: 700;
+    padding-bottom: 70px;
+    font-size: 9rem;
+    font-family: $main_font;
+    color: $colored_title;
+    @media (max-width: 768px) {
+        font-size: 6.2rem;
+    }
+}
+
+.errorPage__txt {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $colored_title;
+}
+
+.errorPage__link {
+     padding-top: 70px;
+     text-decoration: underline;
+     text-align: center;
+}

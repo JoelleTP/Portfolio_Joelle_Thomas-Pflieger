@@ -1,5 +1,5 @@
 import "./Projects.scss"
-import { projectsData } from "../../data/projectsData"
+import { projectsData } from "../../data/data"
 import Card from "../Card/Card"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { useState } from "react";
@@ -31,7 +31,7 @@ function Projects() {
                 <label htmlFor="filtre-select">Filtrer les projets :</label>
                 <select name="filtre" id="filtre-select" onChange={handleChange}>
                     <option value="">Tous</option>
-                    {allTags.map((tag, index) => (
+                    {allTags.length > 0 && allTags.map((tag, index) => (
                         <option key={index} value={tag}>{tag}</option>
                     ))}   
                 </select>
@@ -50,7 +50,7 @@ function Projects() {
                 >
                     {data.map((project) => (
                         <Card 
-                        key={project.title}
+                        key={project.id}
                         title={project.title}
                         image={project.image}
                         description={project.description}

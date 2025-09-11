@@ -1,0 +1,66 @@
+@import "../../assets/styles/partials/variables.scss";
+
+.ReactModal__Content {
+    padding: 30px;
+    max-height: 95vh;
+    width: 80%;
+    max-width: 1000px;
+    & i {
+         color: $colored_title;
+         font-size: 1.9rem;
+         &:hover {
+            transform: scale(1.2);
+         }
+    }
+}
+
+.modal__topContainer {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal__title {
+    font-size: $subtitle_size;
+    color: $colored_title;
+}
+
+.modal__txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.modal__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: $colored_background;
+}
+
+.modal__subtitle {
+    padding: 20px 0 10px 0;
+}
+
+.modal__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: $colored_background;
+    border: solid 1px $colored_background;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+

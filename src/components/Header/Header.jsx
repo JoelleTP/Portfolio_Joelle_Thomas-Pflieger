@@ -1,6 +1,7 @@
 import { HashLink } from "react-router-hash-link";
 import "./Header.scss"
 import { useState } from "react";
+import { navbarItem } from "../../data/data"
 
 function Header() {
 
@@ -8,19 +9,19 @@ function Header() {
     const handleShowLinks = () => {
         setShowLinks(!showLinks)
     }
+
     return (
         <header>
-             <h1 className="mainlogo">Joëlle Thomas-Pflieger</h1>
-             <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
+             <p className="mainlogo">Joëlle Thomas-Pflieger</p>
+             <nav className={`navbar ${showLinks ? "navbar--open" : ""}`}>
                 <ul className="navbar__menu">
-                    <li className="navbar__item"><HashLink smooth to="/#about" onClick={handleShowLinks}>À propos</HashLink></li>
-                    <li className="navbar__item"><HashLink smooth to="/#skills" onClick={handleShowLinks}>Compétences</HashLink></li>
-                    <li className="navbar__item"><HashLink smooth to="/#projects" onClick={handleShowLinks}>Projets</HashLink></li>
-                    <li className="navbar__item"><HashLink smooth to="/#formation" onClick={handleShowLinks}>Formation</HashLink></li>
-                    <li className="navbar__item"><HashLink smooth to="/services/#services" onClick={handleShowLinks}>Services</HashLink></li>
-                    <li className="navbar__item"><HashLink smooth to="/services/#contact" onClick={handleShowLinks}>Contact</HashLink></li>
+                    {navbarItem.map((item, index) => (
+                        <li className="navbar__item" key={index}>
+                            <HashLink smooth to={`${item.page === "Accueil" ? "" : "/" + item.page}/#${item.link}`}  onClick={handleShowLinks}>{item.title}</HashLink>
+                        </li>
+                    ))}
                 </ul>
-                <button className="navbar__burger" onClick={handleShowLinks}>
+                <button className="navbar__burger" onClick={handleShowLinks} aria-label="Ouvrir/Fermer le menu de navigation">
                     <span className="burger__bar"></span>
                 </button>
             </nav>

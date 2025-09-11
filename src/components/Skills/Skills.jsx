@@ -1,5 +1,5 @@
 import "./Skills.scss"
-import { skillsData } from "../../data/skillsData";
+import { skillsData } from "../../data/data";
 
 function Skills() {
     return (
@@ -8,12 +8,12 @@ function Skills() {
             <div className="skills__carousel">
                 <ul className="carousel__gallery">
                     {skillsData.map((skill, index) => (
-                    <li key={index} className={`gallery__card timer-${index + 1}`}>
-                        <div className="card__content">
-                            <span>{skill.title}</span>
-                            <img src={skill.logo} alt={`logo ${skill.title}`} />
-                        </div>
-                    </li>
+                        <li key={index} className={`gallery__card timer-${index + 1}`}>
+                            <div className="card__content">
+                                {skill.title && <span>{skill.title}</span>}
+                                {skill.logo && <img src={skill.logo} alt={`logo ${skill.title}`} />}
+                            </div>
+                        </li>
                     ))}
                 </ul>
             </div>

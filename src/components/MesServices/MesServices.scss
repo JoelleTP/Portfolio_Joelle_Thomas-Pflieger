@@ -12,12 +12,11 @@
 
 .services__container {
     max-width: 1440px;
-    display: flex;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
     gap: 30px;
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
+    justify-content: center; 
+    margin: auto;
 }
 
 .services__article {
@@ -31,7 +30,7 @@
 }
 
 .article__title {
-    font-size: 20px;
+    font-size: $subtitle_size;
 }
 
 .article__image {

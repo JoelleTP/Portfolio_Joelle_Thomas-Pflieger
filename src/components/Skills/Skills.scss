@@ -74,9 +74,9 @@
 }
 
 .card__content span {
-    font-size: 14px; 
+    font-size: 0.8rem; 
     @media (max-width: 768px) {
-        font-size: 10px;
+        font-size: 0.55rem;
     }
 }
 
@@ -106,3 +106,4 @@
         filter: grayscale(0);
     }
 } 
+

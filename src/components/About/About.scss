@@ -27,7 +27,6 @@
 
 .about__txt {
     text-align: justify;
-    line-height: 1.6;
     display: flex;
     flex: 2;
     flex-direction: column;
@@ -52,8 +51,7 @@
     display: flex;
     gap: 25px;
     margin: 20px auto 0 auto;
-}
-
-.about__button a {
-    @include main_button;
+    & a {
+        @include main_button;
+    }
 }

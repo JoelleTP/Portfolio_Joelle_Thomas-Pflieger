@@ -12,15 +12,13 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    & label {
-        color: $colored_title;
-    }
     & select {
         @include main_button;
+        text-align: left;
         outline: none;
         & option {
         color: $colored_title;
-        font-size: 16px;
+        background-color: white;
         }
     }
 }
