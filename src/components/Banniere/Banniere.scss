@@ -24,15 +24,28 @@
     }
 }
 
+.Typewriter {
+    line-height: normal;
+}
+
+.Typewriter__cursor {
+    width: 0.8rem;
+    height: 1em;
+    animation: none !important;
+    margin-left: 3px !important;
+    display: inline-block;
+    background-color: #CE9178;;
+    &--hidden {
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+}
+
 .txt__additional {
     font-size: fz(1, 4.8, 768, 1920);
     font-family: $computer_font;
     color: #4EC9B0;
     line-height: normal;
-    display: block;
-    @media (max-width: 768px) {
-        display: none;
-    }
     &--color {
         color: #CE9178;
     }
@@ -43,6 +56,7 @@
     color: #DCDCAA;
     margin-top: 20px;
     line-height: normal;
+    display: inline;
     @media (max-width: 768px) {
         font-size: fz(1, 3, 350, 768);
         margin-top: 0;
@@ -67,3 +81,4 @@
         white-space: nowrap;
     } 
 }
+
