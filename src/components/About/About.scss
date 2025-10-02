@@ -26,18 +26,20 @@
 }
 
 .about__txt {
-    text-align: justify;
     display: flex;
     flex: 2;
     flex-direction: column;
     gap: 20px;
+    & p {
+        text-align: justify;
+    }
 }
 
 .about__photo {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about__img {
@@ -48,8 +50,6 @@
 }
 
 .about__button {
-    display: flex;
-    gap: 25px;
     margin: 20px auto 0 auto;
     & a {
         @include main_button;

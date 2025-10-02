@@ -1,9 +1,9 @@
-import "./MesServices.scss"
+import "./MyServices.scss"
 import { mesServicesData } from "../../data/data"
 import { useContext } from "react";
 import { LanguageContext } from "../../context/index.jsx";
 
-function MesServices() {
+function MyServices() {
     const { lang } = useContext(LanguageContext);
 
     return (
@@ -22,4 +22,4 @@ function MesServices() {
     )
 }
 
-export default MesServices
+export default MyServices

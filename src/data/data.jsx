@@ -31,6 +31,17 @@ export const navbarItem = [
     }
 ];
 
+export const aboutData = {
+  "description": {
+    "fr": "Après 11 ans en affaires réglementaires, où j'ai acquis de la rigueur et une expérience en gestion de projets, je me suis reconvertie dans le développement web via la formation Intégrateur Web OpenClassRooms. J'ai réalisé de nombreux projets en HTML, CSS, JavaScript, Sass, PHP et React, dont le site d'un autoentrepreneur, et plusieurs applications personnelles mettant en pratique l'accessibilité, le responsive design et les bonnes pratiques front-end.",
+    "en": "Currently retraining in web development for the past two years, I discovered a late but strong passion for creating ergonomic and accessible web interfaces. <br /> After 11 years in regulatory affairs, where I gained rigor and project management experience, I transitioned into web development through the OpenClassRooms Front-End Integration program. I have completed numerous projects in HTML, CSS, JavaScript, Sass, PHP, and React, including a professional website for a freelancer, as well as several personal applications applying accessibility, responsive design, and front-end best practices."
+  },
+  "opening": {
+    "fr": "Mon approche combine rigueur et créativité : je m'assure que chaque projet soit performant, maintenable et agréable à utiliser pour chaque utilisateur. Je cherche aujourd'hui à rejoindre une équipe front-end dynamique pour créer des solutions web innovantes tout en continuant à développer mes compétences techniques et UX.",
+    "en": "My approach combines rigor and creativity: I make sure every project is high-performing, maintainable, and enjoyable for every user. I am now looking to join a dynamic front-end team to build innovative web solutions while continuing to strengthen my technical and UX skills."
+  }
+};
+
 export const skillsData = [
     {
         "title": "Javascript",
@@ -211,8 +222,8 @@ export const formationData = [
       "en": "OpenClassrooms Web Integrator Training" 
     },
     "description": { 
-      "fr": "Certification professionnelle Développeur Informatique", 
-      "en": "Professional Certification in Computer Development" 
+      "fr": "Certification professionnelle Développeur Informatique RNCP de niveau 5 (bac +2). Réalisation de 12 projets professionnalisants. Maîtrise de HTML, CSS, SASS, JavaScript, React & Redux, les appels API, Visual Studio Code, le responsive design, Git & GitHub.", 
+      "en": "Professional certification in Computer Development (RNCP Level 5, equivalent to a 2-year post-secondary degree). Completed 12 professional projects. Proficient in HTML, CSS, SASS, JavaScript, React & Redux, API calls, Visual Studio Code, responsive design, Git & GitHub." 
     }
   },
   {
@@ -233,19 +244,19 @@ export const formationData = [
       "en": "Project Management in a Company" 
     },
     "description": { 
-      "fr": "12 années d'expérience en entreprise en tant que chargée d'affaires réglementaires, travail en équipe, gestion des changements, gestion des spécifications avec les clients, gestion de projets", 
-      "en": "12 years of professional experience as a Regulatory Affairs Manager: teamwork, change management, client specifications, project management" 
+      "fr": "11 années d'expérience en entreprise en tant que chargée d'affaires réglementaires, travail en équipe, gestion des changements, gestion des spécifications avec les clients, gestion de projets", 
+      "en": "11 years of professional experience as a Regulatory Affairs Manager: teamwork, change management, client specifications, project management" 
     }
   },
   {
     "year": "2012",
     "title": { 
-      "fr": "Formation ingénieur biomédical", 
-      "en": "Biomedical Engineering Training" 
+      "fr": "Formation d'ingénieur biomédical, ISIFC, Besançon", 
+      "en": "Biomedical Engineering Training, ISIFC, Besançon" 
     },
     "description": { 
-      "fr": "Langages de programmation (C++ et Java), html et CSS, développement d'un programme pour un stimulateur", 
-      "en": "Programming languages (C++ and Java), HTML and CSS, development of a program for a stimulator" 
+      "fr": "Obtention du diplôme d'ingénieur après 3 ans de formation. Apprentissage des langages de programmation (C++ et Java), html et CSS, développement d'un puissance 4 et d'un programme pour un stimulateur musculaire", 
+      "en": "Earning of an engineering degree after 3 years of study. Learning of programming languages (C++ and Java), HTML and CSS, and developing of a Connect Four game and a program for a muscle stimulator." 
     }
   }
 ];

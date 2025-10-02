@@ -16,7 +16,12 @@ function Contact() {
     const sendEmail = async (e) => {
         e.preventDefault()
         try {
-            await emailjs.sendForm("service_hgemkxu", "template_r2t6ncj", form.current, "MTYuB7VkDmfCgi_b_")
+            await emailjs.sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                form.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )
             setStatus("success")
             form.current.reset()
             setIsOpen(true)

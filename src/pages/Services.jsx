@@ -1,10 +1,10 @@
 import Contact from "../components/Contact/Contact"
-import MesServices from "../components/MesServices/MesServices"
+import MyServices from "../components/MyServices/MyServices"
 
 function Services() {
     return (
         <>
-            <MesServices />
+            <MyServices />
             <Contact />
         </>
     )

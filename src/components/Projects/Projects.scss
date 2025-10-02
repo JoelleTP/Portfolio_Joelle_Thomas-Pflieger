@@ -14,11 +14,12 @@
     gap: 10px;
     & select {
         @include main_button;
-        text-align: left;
-        outline: none;
+        & {
+             text-align: left;
+        }
         & option {
-        color: $colored_title;
-        background-color: white;
+            color: $colored_title;
+            background-color: white;
         }
     }
 }
