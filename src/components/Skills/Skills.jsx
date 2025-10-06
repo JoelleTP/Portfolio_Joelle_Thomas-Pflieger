@@ -13,7 +13,7 @@ function Skills() {
                     {skillsData.map((skill, index) => (
                         <li key={index} className={`gallery__card timer-${index + 1}`}>
                             <div className="card__content">
-                                {skill.title && <span>{skill.title}</span>}
+                                {skill.title && <h3>{skill.title}</h3>}
                                 {skill.logo && <img src={skill.logo} alt={`logo ${skill.title}`} />}
                             </div>
                         </li>

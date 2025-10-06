@@ -73,8 +73,9 @@
     }
 }
 
-.card__content span {
+.card__content h3 {
     font-size: 0.8rem; 
+    font-weight: normal;
     @media (max-width: 768px) {
         font-size: 0.55rem;
     }
